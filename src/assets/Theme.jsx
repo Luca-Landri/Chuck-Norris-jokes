@@ -8,6 +8,7 @@ const theme = {
     dark: "#000",
     primary: "#780116",
     secondary: "#692C00",
+    background: "#D17D40",
   },
 
   fontSizes: {

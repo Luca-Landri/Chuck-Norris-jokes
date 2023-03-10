@@ -1,3 +1,8 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 @font-face {
   font-family: 'Dobro';
   src: url('./assets/fonts/Dobro.otf') format('truetype');

@@ -9,11 +9,19 @@ const Title = styled.h1`
   font-family: "Dobro-Drunk";
 `
 
+const Container = styled.div`
+  background-color: ${({ theme }) => theme.colors.background};
+  height: 100vh;
+  display: flex;
+`
+
 function App() {
 
   return (
     <Theme>
-      <Title>Chuck Norris</Title>
+      <Container>
+        <Title>Chuck Norris</Title>
+      </Container>
     </Theme>
   )
 }
