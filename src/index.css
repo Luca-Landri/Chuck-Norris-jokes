@@ -1,3 +1,13 @@
-* {
-    background-color: #D17D40;
+@font-face {
+  font-family: 'Dobro';
+  src: url('./assets/fonts/Dobro.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+    font-family: 'Dobro-Drunk';
+    src: url('./assets/fonts/Dobro Drunk.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }

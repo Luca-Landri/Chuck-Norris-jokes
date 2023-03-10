@@ -1,6 +1,5 @@
 import React from "react";
 import { ThemeProvider } from "styled-components";
-import Fonts from "./Fonts";
 import GlobalStyle from "./GlobalStyle";
 
 const theme = {
@@ -9,11 +8,6 @@ const theme = {
     dark: "#000",
     primary: "#780116",
     secondary: "#692C00",
-  },
-
-  fonts: {
-    konstanz: '"Konstanz", sans-serif',
-    lato: '"Lato", sans-serif',
   },
 
   fontSizes: {
@@ -25,8 +19,6 @@ const theme = {
 
 const Theme = ({ children }) => (
   <>
-    <Fonts />
-    <GlobalStyle />
     <ThemeProvider theme={theme}>{children}</ThemeProvider>
   </>
 );
