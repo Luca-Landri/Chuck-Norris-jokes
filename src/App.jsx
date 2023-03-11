@@ -1,9 +1,10 @@
-import './App.css'
+import './App.scss'
+import "./index.scss"
 
 function App() {
 
   return (
-      <div>
+      <div className='container'>
         <h1>Chuck Norris</h1>
       </div>
   )
