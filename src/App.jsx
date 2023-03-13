@@ -11,7 +11,7 @@ function App() {
   const [copy, setCopy] = useState('')
 
   const generateJoke = () => {
-    fetch(`https://api.chucknorris.io/jokes/random`)
+    fetch(`https://api.chucknorris.io/jokes/random?category=${selectedCategory.category}`)
       .then((response) => response.json())
       .then((actualData) => {
         console.log(actualData.value)
@@ -27,7 +27,7 @@ function App() {
           <img src="./images/Chuck-face.png" alt="" />
         </div>
         <div className='body'>
-          <Category take={setSelectedCategory} text="Select a category"/>
+          <Category take={setSelectedCategory}/>
           <Joke joke={joke}/>
         </div>
         <div className='buttons'>

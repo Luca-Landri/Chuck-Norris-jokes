@@ -5,9 +5,10 @@ import { Icon } from '@iconify/react';
 
 
 
-const Category = ({text, take}) => {
+const Category = ({take}) => {
     const [open, setOpen] = useState(false)
     const [categories, setCategories] = useState([])
+    const [text, setText] = useState('Select a category')
     
     useEffect(() => {
     fetch(`https://api.chucknorris.io/jokes/categories`)
@@ -19,6 +20,13 @@ const Category = ({text, take}) => {
 
     console.log(categories)
     }, []);
+
+    const handleCategory = (category) => {
+        take(category)
+        setOpen(!open)
+        setText(category.category)
+        
+    }
 
     return (
     <div className='category-container'> 
@@ -32,7 +40,7 @@ const Category = ({text, take}) => {
                 open && (
                     <div className='category-selection'>
                         {categories.map((category, index) => (
-                                <div key={index} onClick={() => take({category})}>
+                            <div key={index} onClick={() => handleCategory({category})}>
                                 <p>{category}</p>
                             </div>
                         ))}
