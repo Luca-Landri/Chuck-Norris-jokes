@@ -12,7 +12,8 @@ const Button = ({text, type, action}) => {
 
 Button.propTypes = {
   text: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired
+  type: PropTypes.oneOf(['copy', 'primary']).isRequired,
+  action: PropTypes.func
 }
 
 
