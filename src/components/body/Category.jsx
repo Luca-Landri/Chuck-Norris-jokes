@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react';
 
 
 
-const Category = ({take}) => {
+const Category = ({text, take}) => {
     const [open, setOpen] = useState(false)
     const [categories, setCategories] = useState([])
     
@@ -25,7 +25,7 @@ const Category = ({take}) => {
         <img className='norris-selection' src="./images/chuck-norris.png" alt="" />
         <div className='category'>
             <div className='selection' onClick={() => setOpen(!open)}>
-                <h4>Select a category</h4>
+                <h4>{text}</h4>
                 <Icon icon="material-symbols:arrow-back-ios-new-rounded" width="30" height="30" rotate={3} />
             </div>
             {

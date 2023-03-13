@@ -14,7 +14,7 @@ function App() {
   return (
       <div className='container'>
         <h1 className='title'>Joke Norris</h1>
-        <Category take={setSelectedCategory}/>
+        <Category take={setSelectedCategory} text="Select a category"/>
         <div className='buttons'>
           <Button text="Copy to clipboard 📔" type="copy"/>
           <Button text="Click to joke" type="primary"/>
