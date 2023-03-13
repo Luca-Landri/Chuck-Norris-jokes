@@ -22,7 +22,10 @@ function App() {
 
   return (
       <div className='container'>
-        <h1 className='title'>Joke Norris</h1>
+        <div className='title-section'>
+          <h1 className='title'>Joke Norris</h1>
+          <img src="./images/Chuck-face.png" alt="" />
+        </div>
         <div className='body'>
           <Category take={setSelectedCategory} text="Select a category"/>
           <Joke joke={joke}/>
