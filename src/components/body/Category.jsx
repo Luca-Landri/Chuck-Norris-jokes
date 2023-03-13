@@ -44,7 +44,8 @@ const Category = ({text, take}) => {
 }
 
 Category.propTypes = {
-    take: PropTypes.func.isRequired
+    take: PropTypes.func.isRequired,
+    text: PropTypes.string.isRequired
 }
 
 export default Category
