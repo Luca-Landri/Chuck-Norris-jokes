@@ -5,7 +5,7 @@ import { Icon } from '@iconify/react';
 
 
 
-const Category = () => {
+const Category = ({take}) => {
     const [open, setOpen] = useState(false)
     const [categories, setCategories] = useState([])
     
@@ -13,7 +13,6 @@ const Category = () => {
     fetch(`https://api.chucknorris.io/jokes/categories`)
     .then((response) => response.json())
     .then((actualData) => {
-        console.log(actualData)
         setCategories(actualData)
     })
     .catch((err) => console.log(err.message));
@@ -22,21 +21,27 @@ const Category = () => {
     }, []);
 
     return (
-        <div onClick={() => setOpen(!open)} className='category-container'>
-            <div className='selection'>
+        <div className='category-container'>
+            <div className='selection' onClick={() => setOpen(!open)}>
                 <h4>Select a category</h4>
                 <Icon icon="material-symbols:arrow-back-ios-new-rounded" width="30" height="30" rotate={3} />
             </div>
             {
                 open && (
                     <div className='category'>
-                        {categories.map((category) => (
+                        {categories.map((category, index) => (
+                                <div key={index} onClick={() => take({category})}>
                                 <p>{category}</p>
+                            </div>
                         ))}
                     </div>
             )}                
         </div>
     )
+}
+
+Category.propTypes = {
+    take: PropTypes.func.isRequired
 }
 
 export default Category
