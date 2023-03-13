@@ -10,8 +10,10 @@ function App() {
       <div className='container'>
         <h1 className='title'>Joke Norris</h1>
         <Category/>
-        <Button text="Copy to clipboard 📔" type="copy"/>
-        <Button text="Click to joke" type="primary"/>
+        <div className='buttons'>
+          <Button text="Copy to clipboard 📔" type="copy"/>
+          <Button text="Click to joke" type="primary"/>
+        </div>
       </div>
   )
 }
