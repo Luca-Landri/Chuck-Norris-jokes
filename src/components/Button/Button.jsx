@@ -2,10 +2,9 @@ import React from 'react'
 import './Button.scss'
 import PropTypes from 'prop-types'
 
-const Button = ({text, type}) => {
+const Button = ({text, type, action}) => {
   return (
-    <button type={type} className={`btn ${type}-btn`} 
-     >
+    <button type={type} className={`btn ${type}-btn`} onClick={action}>
         <h3>{text}</h3>
     </button>
   )
