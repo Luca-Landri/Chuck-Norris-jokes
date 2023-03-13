@@ -5,9 +5,10 @@
     border-radius: 8px;
     padding: 10px 20px;
     font-weight: 600;
-    cursor: pointer;
     box-shadow: 0px 7px 29px 0px #00000080;
     color: $light;
+    cursor: pointer;
+    user-select: none;
 }
 
 .primary-btn {
