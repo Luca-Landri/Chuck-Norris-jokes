@@ -1,0 +1,9 @@
+@import '../../index.scss';
+
+.joke-container {
+    width: 100%;
+    background-color: $light;
+    height: 200px;
+    border-radius: 8px;
+    border: 5px solid $dark;
+}
