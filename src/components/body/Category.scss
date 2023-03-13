@@ -1,0 +1,15 @@
+@import '../../index.scss';
+
+.category-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: $light;
+    font-family: 'Dobro', sans-serif;
+    padding: 10px;
+    border-radius: 8px;
+    gap: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
