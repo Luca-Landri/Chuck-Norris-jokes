@@ -9,6 +9,7 @@ function App() {
   const [selectedCategory, setSelectedCategory] = useState('')
   const [joke, setJoke] = useState('')
   const [copy, setCopy] = useState('')
+  const [error, setError] = useState(false)
 
   const generateJoke = () => {
     fetch(`https://api.chucknorris.io/jokes/random?category=${selectedCategory.category}`)
