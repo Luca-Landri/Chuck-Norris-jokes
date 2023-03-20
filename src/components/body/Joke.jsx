@@ -1,5 +1,6 @@
 import React from 'react'
 import './Joke.scss'
+import PropTypes from 'prop-types'
 
 const Joke = ({joke}) => {
   return (
@@ -7,6 +8,10 @@ const Joke = ({joke}) => {
         {joke}
     </div>
   )
+}
+
+Joke.propTypes = {
+  joke: PropTypes.string.isRequired,
 }
 
 export default Joke
