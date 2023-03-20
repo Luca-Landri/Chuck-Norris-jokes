@@ -11,12 +11,17 @@ function App() {
   const [error, setError] = useState(false)
 
   const generateJoke = () => {
-    fetch(`https://api.chucknorris.io/jokes/random?category=${selectedCategory.category}`)
+    if (selectedCategory.category != null) {
+      fetch(`https://api.chucknorris.io/jokes/random?category=${selectedCategory.category}`)
       .then((response) => response.json())
       .then((actualData) => {
         setJoke(actualData.value)
+        setError(false)
       })
       .catch((err) => console.log(err.message));
+    } else {
+      setError(true)
+    }
   }
 
   const copyToClipboard = (e) => {
@@ -35,6 +40,7 @@ function App() {
           <Joke joke={joke}/>
         </div>
         <div className='buttons'>
+          {error && <p className='error'>Please select a category</p>}
           <Button text="Copy to clipboard 📔" type="copy" action={copyToClipboard({joke})}/>
           <Button text="Click to joke" type="primary" action={() => generateJoke()}
           />
