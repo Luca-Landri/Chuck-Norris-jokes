@@ -40,11 +40,14 @@ function App() {
           <Joke joke={joke}/>
         </div>
         <div className='buttons'>
-          {error && <p className='error'>Please select a category</p>}
+          {error && <p className='error'>Please select a category!</p>}
           <Button text="Copy to clipboard 📔" type="copy" action={copyToClipboard({joke})}/>
           <Button text="Click to joke" type="primary" action={() => generateJoke()}
           />
         </div>
+        <img className='cactus' src="./images/cactus.png" alt="cactus image" />
+        <img className='decoration' src="./images/decoration.png" alt="boh non so come si chiama" />
+
       </div>
   )
 }

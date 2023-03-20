@@ -41,6 +41,28 @@
         justify-content: center;
         gap: 20px;
     }
+
+    .cactus {
+        width: 300px;
+        position: absolute;
+        bottom: 0;
+        left: 50px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+
+    .decoration {
+        width: 300px;
+        position: absolute;
+        bottom: 0;
+        right: 50px;
+
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
 }
 
 .title {
@@ -49,4 +71,9 @@
     margin-bottom: 20px;
     font-family: "Dobro-Drunk", sans-serif;
     padding-bottom: 50px;
+}
+
+.error {
+    color: red;
+    font-size: 1.5rem;
 }
