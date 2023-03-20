@@ -11,7 +11,7 @@ const Joke = ({joke}) => {
 }
 
 Joke.propTypes = {
-  joke: PropTypes.string.isRequired,
+  joke: PropTypes.string,
 }
 
 export default Joke
