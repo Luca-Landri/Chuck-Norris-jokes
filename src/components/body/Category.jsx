@@ -11,14 +11,12 @@ const Category = ({take}) => {
     const [text, setText] = useState('Select a category')
     
     useEffect(() => {
-    fetch(`https://api.chucknorris.io/jokes/categories`)
-    .then((response) => response.json())
-    .then((actualData) => {
-        setCategories(actualData)
-    })
-    .catch((err) => console.log(err.message));
-
-    console.log(categories)
+        fetch(`https://api.chucknorris.io/jokes/categories`)
+        .then((response) => response.json())
+        .then((actualData) => {
+            setCategories(actualData)
+        })
+        .catch((err) => console.log(err.message));
     }, []);
 
     const handleCategory = (category) => {
@@ -53,7 +51,6 @@ const Category = ({take}) => {
 
 Category.propTypes = {
     take: PropTypes.func.isRequired,
-    text: PropTypes.string.isRequired
 }
 
 export default Category
