@@ -1,0 +1,16 @@
+@import '../../index.scss';
+
+.joke-container {
+    width: 600px;
+    padding: 10px;
+    background-color: $light;
+    height: 200px;
+    border-radius: 8px;
+    border: 5px solid $dark;
+    box-shadow: 0px 7px 29px 0px rgba(100, 100, 111, 0.2);
+
+    @media (max-width: 600px) {
+        width: 90%;
+    }
+
+}
