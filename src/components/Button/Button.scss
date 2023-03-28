@@ -1,0 +1,24 @@
+@import '../../index.scss';
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 600;
+    box-shadow: 0px 7px 29px 0px #00000080;
+    color: $light;
+    cursor: pointer;
+    user-select: none;
+}
+
+.primary-btn {
+    background-color: $primary;
+    font-family: "Dobro-Drunk", sans-serif;
+    font-size: 2.2rem;
+}
+
+.copy-btn {
+    background-color: $secondary;
+    font-family: "Dobro", sans-serif;
+    font-size: 1rem;
+}
