@@ -1,6 +1,6 @@
 import './App.scss'
 import "./index.scss"
-import Button from './components/button/Button'
+import Button from './components/Button/Button.jsx'
 import React, { useState } from 'react'
 import Category from './components/body/Category'
 import Joke from './components/body/Joke'
