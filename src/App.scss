@@ -9,7 +9,7 @@
     height: 100vh;
     width: 100vw;
     background-color: $background;
-    font-family: 'Dobro', sans-serif;
+    font-family: 'Rye', cursive;
 
     .title-section {
         position: relative;
@@ -21,7 +21,7 @@
         img {
             position: absolute;
             top: 0;
-            right: 125px;
+            right: 150px;
             width: 70px;
         }
     }
@@ -69,11 +69,14 @@
     font-size: 4rem;
     color: $light;
     margin-bottom: 20px;
-    font-family: "Dobro-Drunk", sans-serif;
+    font-family: 'Rye', cursive;
     padding-bottom: 50px;
 }
 
 .error {
     color: red;
     font-size: 1.5rem;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 15px;
 }

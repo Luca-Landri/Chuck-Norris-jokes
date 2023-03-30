@@ -32,7 +32,7 @@ function App() {
   return (
       <div className='container'>
         <div className='title-section'>
-          <h1 className='title'>Joke Norris</h1>
+          <h1 className='title'>JOKE NORRIS</h1>
           <img src="./images/Chuck-face.png" alt="" />
         </div>
         <div className='body'>
@@ -42,7 +42,7 @@ function App() {
         <div className='buttons'>
           {error && <p className='error'>Please select a category!</p>}
           <Button text="Copy to clipboard 📔" type="copy" action={copyToClipboard({joke})}/>
-          <Button text="Click to joke" type="primary" action={() => generateJoke()}
+          <Button text="CLICK TO JOKE" type="primary" action={() => generateJoke()}
           />
         </div>
         <img className='cactus' src="./images/cactus.png" alt="cactus image" />
