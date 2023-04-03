@@ -2,6 +2,7 @@ import React, {useState, useEffect} from 'react'
 import './Category.scss'
 import PropTypes from 'prop-types'
 import { Icon } from '@iconify/react';
+import { motion } from 'framer-motion'
 
 
 
@@ -29,7 +30,7 @@ const Category = ({take}) => {
     return (
     <div className='category-container'> 
         <img className='norris-selection' src="./images/chuck-norris.png" alt="" />
-        <div className='category'>
+        <motion.div whileTap={{ scale: 0.9 }} className='category'>
             <div className='selection' onClick={() => setOpen(!open)}>
                 <h4>{text}</h4>
                 <Icon icon="material-symbols:arrow-back-ios-new-rounded" width="30" height="30" rotate={3} />
@@ -39,12 +40,12 @@ const Category = ({take}) => {
                     <div className='category-selection'>
                         {categories.map((category, index) => (
                             <div key={index} onClick={() => handleCategory({category})}>
-                                <p>{category}</p>
+                                <motion.p whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.9 }}>{category}</motion.p>
                             </div>
                         ))}
                     </div>
             )}                
-        </div>
+        </motion.div>
     </div>
     )
 }
