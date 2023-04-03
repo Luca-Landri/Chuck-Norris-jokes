@@ -32,7 +32,7 @@ function App() {
   return (
       <div className='container'>
         <div className='title-section'>
-          <h1 className='title'>JOKE NORRIS</h1>
+          <h1>JOKE NORRIS</h1>
           <img src="./images/Chuck-face.png" alt="" />
         </div>
         <div className='body'>
@@ -47,6 +47,7 @@ function App() {
         </div>
         <img className='cactus' src="./images/cactus.png" alt="cactus image" />
         <img className='decoration' src="./images/decoration.png" alt="boh non so come si chiama" />
+        <img className='upperDecoration' src="./images/UpperCactus.png" alt="cactus image" />
 
       </div>
   )
