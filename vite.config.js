@@ -21,8 +21,8 @@ export default defineConfig({
         theme_color: '#ffffff',
         display: "fullscreen",
         orientation: "portrait",
-        scope: ".",
-        start_url: "/",
+        scope: "/Chuck-Norris-jokes/",
+        start_url: "/Chuck-Norris-jokes/",
         id: "/",
         icons: [
           {
